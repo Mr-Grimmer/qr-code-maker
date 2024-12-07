@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate QR Code</h1>
+        <form id="qrForm">
+            <label for="data">Enter Link/Data:</label>
+            <input type="text" name="data" id="data" required><br>
+            <label for="fillColor">Fill Color (e.g., red, blue, #FF5733):</label>
+            <input type="text" name="fill_color" id="fillColor" placeholder="e.g., red, #FF5733"><br>
+            <label for="backColor">Background Color (e.g., white, black, #FFFFFF):</label>
+            <input type="text" name="back_color" id="backColor" placeholder="e.g., white, #FFFFFF"><br>
+            <button type="submit">Generate QR Code</button>
+        </form>
+        <div id="result">
+            <p>Your QR Code:</p>
+            <img id="qrImage" style="display: none;">
+            <a id="downloadBtn" class="download-btn" download="qrcode.png" style="display: none;">Download QR Code</a>
+            <p class="error" id="errorMsg"></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
