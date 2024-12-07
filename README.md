@@ -87,12 +87,3 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 
 ## License
 This project is open-source and available under the [MIT License](LICENSE).
-
-## Acknowledgments
-- Special thanks to the creators of **Flask**, **qrcode**, **Pillow**, and **webcolors** for their excellent libraries.
-- Inspired by the need for a customizable QR code generator tool.
-
----
-
-**Feel free to reach out with questions or suggestions. Enjoy creating QR codes!**
-
